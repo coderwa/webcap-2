@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>download Page</title>
+    <!--fov icons-->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <!--link css feed-->
+    <link rel="stylesheet" href="feed.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--swipercss file link-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+
+<body>
+     <!--custom scroller bar-->
+     <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="index.html" class="logo">WEB<span>CAP</span></a>
+            <!--nav icon-->
+            <div class="nav-icon">
+                <i class='bx bx-bell bx-tada' id="bell-icon"><span> </span></i>
+                <i class='bx bxs-download' id="bell-download"></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <!--menu-->
+            <div class="menu">
+                <image src="iamges/Responsive Games Website Images & Video/spiderman-96.png" class="img-fluid " alt="....">
+                    <div class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#treanding">trending</a></li>
+                        <li><a href="#New ">New games</a></li>
+                        <li><a href="login.html">log out</a></li>
+                        <li><a href="index.html">contact us</a></li>
+                        <li><a href="resistrate.html">E-sports resistratation</a></li>
+
+                    </div>
+            </div>
+            <!--notification-->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Congratulation,Your game download complate.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>cloud not yet</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <form id="feedbackForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    
+
+    <!--link swiper files-->
+    <script src="swiper-bundle.min.js"></script>
+    <!--link to js-->
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var feedback = 'Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message;
+    window.location.href = 'mailto:your-coderwal@gmail.comsubject=Feedback&body=' + encodeURIComponent(feedback);
+});
+    </script>
+
+</body>
+
+</html>
