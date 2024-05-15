@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>download Page</title>
+    <!--fov icons-->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--swipercss file link-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+    body {
+        margin: 0;
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+        user-select: none;
+    }
+
+    header {
+        margin: 0 auto;
+        width: 431px;
+        left: auto;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--text-color);
+        text-transform: uppercase;
+        margin: 0 auto 0 0;
+    }
+
+    .logo span {
+        color: var(--main-color);
+
+    }
+
+    h1 {
+        background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 340px;
+        padding: 1.2rem 0;
+        margin: 0;
+    }
+
+    .score-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 6px;
+        background: #5EE270;
+    }
+
+    @media (max-width:560px) {
+        .logo {
+            font-size: 1.5rem;
+            margin-right: 40%;
+            font-weight: 600;
+
+        }
+
+        .menu img {
+
+            display: none;
+        }
+
+        .menu {
+            justify-content: flex-end;
+        }
+
+        .nav {
+            padding: 8px 0;
+        }
+
+        .nav-icon .bx,
+        .menu-icon {
+            height: 40px;
+            width: 40px;
+
+        }
+
+        .home {
+
+            min-height: 240px;
+        }
+
+        .home-text {
+            padding-right: 1rem;
+
+        }
+
+        p {
+            font-size: 0.875rem;
+        }
+
+        .download-links {
+
+            grid-template-columns: 1fr;
+
+        }
+
+    }
+
+    /* for medium device*/
+    @media (max-width:320px) {
+        .notification {
+            right: 1.5rem;
+        }
+
+        .menu img {
+            width: 400px;
+        }
+
+        .home {
+            min-height: 300px;
+        }
+
+        .home-text h1 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+
+            padding: 12px 17px;
+
+        }
+
+    }
+</style>
+
+
+<body>
+    <!--custom scroller bar-->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+    <!--header-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="index.html" class="logo">WEB<span>CAP</span></a>
+            <!--nav icon-->
+            <div class="nav-icon">
+                <i class='bx bx-bell bx-tada' id="bell-icon"><span> </span></i>
+                <i class='bx bxs-download' id="bell-download"></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+           <!--menu-->
+           <div class="menu">
+            <image src="iamges/Responsive Games Website Images & Video/menu.png" class="img-fluid " alt="....">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#treanding">trending</a></li>
+                    <li><a href="#New container ">New games</a></li>
+                    <li><a href="#copyright container ">contact us</a></li>
+                    <li><a href="login.html">log out</a></li>
+                    <li><a href="resistrate.html">E-sports resistratation</a></li>
+
+
+
+                </div>
+        </div>
+            <!--notification-->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Congratulation,Your game download complate.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>cloud not yet</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <h1>Floppy Bird</h1>
+    <div class="score-container">
+        <div id="bestScore"></div>
+        <div id="currentScore"></div>
+    </div>
+
+
+    <canvas id="canvas" width="431" height="768"></canvas>
+
+</body>
+
+
+
+
+<!--link swiper files-->
+<script src="swiper-bundle.min.js"></script>
+<!--link to js-->
+<script src="main.js"></script>
+<script src="flaapy.js" charset="utf-8"></script>
+
+</body>
+
+</html>
