@@ -1,0 +1,71 @@
+#feedbackForm {
+    width: 300px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 300px;
+}
+
+#feedbackForm label {
+    display: block;
+    margin-top: 20px;
+
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+    align-items: center;
+    width: 555px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 320px;
+    margin: 20px;
+    background-color: transparent;
+    color: #fff;
+}
+
+#feedbackForm button {
+    margin-top: 20px;
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: 500;
+}
+
+#feedbackForm button a:hover {
+    background: var(--light-color);
+    transition: 0.3s all linear;
+}
+
+@media (max-width:1080px) {
+
+    #feedbackForm input,
+    #feedbackForm textarea {
+
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 320px;
+        margin: 5px;
+
+    }
+
+    .menu-icon {
+
+        row-gap: 5px;
+        height: 44px;
+        width: 40px;
+        border-radius: 100%;
+    }
+
+    #feedbackForm button {
+        margin-top: 20px;
+        padding: 5px 10px;
+        color: var(--text-color);
+        letter-spacing: 1px;
+
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+}
